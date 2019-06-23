@@ -88,7 +88,15 @@ input:focus,
 button:focus{
   outline: none;
 }
-button{
+
+.removeBtn{
+  border:1px solid;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 12px;
+}
+
+#primaryBtn{
   text-transform: uppercase;
   width: 10rem;
   height: 2rem;
@@ -99,14 +107,14 @@ button{
   border-radius: 5px;
   color: gray;
 }
-button:hover{
+#primaryBtn:hover{
   transform: scale(1.1);
   border: 2px solid #EF5858;
   color: #EF5858;
 }
 .div{
   margin-top: 4rem;
-  width: 80%
+  width: 80%;
   height: 10rem;
   text-align: center;
   font-size: 28px;
@@ -128,6 +136,10 @@ button:hover{
   font-size: 1.7rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.spoken .removeBtn{
+  display: none;
 }
 .still-to-speak{
   background-color: #EF5858;

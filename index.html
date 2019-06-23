@@ -5,7 +5,7 @@
     <title>random name</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
-  <body>
+  <body onload="prepopulate();">
     <div class="container">
       <div class="still-to-speak">
         <h2>still to speak</h2>
@@ -17,7 +17,7 @@
 
       <div class="input-field">
         <input id="input" placeholder="enter a name">
-        <button type="button" name="button" onclick="displayName();">show name</button>
+        <button type="button" name="button" id ="primaryBtn" onclick="displayName();">show name</button>
         <div class="div">
           <p id="para"></p>
         </div>
