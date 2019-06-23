@@ -70,7 +70,8 @@ var randomName;
 
 
 function displayName(){
-  
+
+  document.querySelector("#primaryBtn").innerText = "pick again";
 
   randomName = nameArray[Math.floor(Math.random() * nameArray.length)];
 

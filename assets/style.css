@@ -51,6 +51,9 @@ hr{
   border-color: #fff;
 }
 
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 /* styles */
 
 .container{
