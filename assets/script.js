@@ -79,23 +79,27 @@ function displayName(){
   var count = 0;
 
   var startTime = new Date().getTime();
+  
 
   if(nameArray.length==1){
       output.innerHTML = nameArray[0];
-      nameArray = [];
       listDisplay(spokenArray,"spoken");
+      spokenArray.push(nameArray[0]);      
+      nameArray = [];
       listDisplay(nameArray,"toSpeak");
+      
+     
   }
   else if(nameArray.length>0){
     if(spokenArray.length>0){
       listDisplay(spokenArray,"spoken");
     }
         var interval  = setInterval(function () {
-        if(new Date().getTime()-startTime > 3000){
+        if(new Date().getTime()-startTime > 2000){
           clearInterval(interval);
           output.innerHTML = randomName;
           nameArray.splice(nameIndex,1);
-          console.log(nameArray);
+  
           listDisplay(nameArray,"toSpeak");
           
           spokenArray.push(randomName);          
@@ -112,8 +116,9 @@ function displayName(){
     } , 200);
   }else{
     output.innerHTML = "no names here";
+    listDisplay(spokenArray,"spoken");
   }
-console.log(nameArray.length);
+
 
 }
 

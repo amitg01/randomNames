@@ -93,6 +93,7 @@ button:focus{
   border: none;
   background: transparent;
   font-size: 12px;
+  cursor: pointer;
 }
 
 #primaryBtn{
