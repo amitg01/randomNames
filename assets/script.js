@@ -121,9 +121,10 @@ function listDisplay(arr,id){
   var list = document.getElementById(id);
   list.innerHTML = "";
   for(i of arr){
-
+    var div = document.createElement("div");
+    div.className = "details-div";
     var name = document.createTextNode(i);
-    list.appendChild(name);
+    div.appendChild(name);
 
     var btn = document.createElement("button");
    
@@ -135,10 +136,11 @@ function listDisplay(arr,id){
 
     btn.onclick = removeUser;
 
-    list.appendChild(btn);
+    div.appendChild(btn);
 
-    var br = document.createElement("br");
-    list.appendChild(br);
+    list.appendChild(div);
+    // var br = document.createElement("br");
+    // l.appendChild(br);
   }
 }
 

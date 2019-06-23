@@ -90,8 +90,7 @@ button:focus{
 }
 
 .removeBtn{
-  border:1px solid;
-  border-radius: 50%;
+  border: none;
   background: transparent;
   font-size: 12px;
 }
@@ -119,6 +118,14 @@ button:focus{
   text-align: center;
   font-size: 28px;
 }
+.details-div{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: .3rem;
+  border: 1px solid;
+}
+
 #para{
   text-transform: uppercase;
 }
